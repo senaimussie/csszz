@@ -7,6 +7,13 @@
     <link href="fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
 
     <style>
+    ul {
+list-style-type: square ;
+
+}
+li::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
         /* Hover effect example */
         .link {
             display: inline-block;
@@ -62,7 +69,7 @@
 </head>
 <body>
     <!-- Hover effect example -->
-    <h2>Before hover</h2>
+    
     <a href="#" class="link">This is a link</a>
     <br><br>
 
