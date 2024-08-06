@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Example</title>
+    <link href="fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+
+    <style>
+        /* Hover effect example */
+        .link {
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            background-color: green;
+            text-decoration: none;
+        }
+        .link:hover {
+            color: green;
+            background-color: white;
+            border: 2px solid green;
+        }
+
+        .highlighted-list {
+            background-color: yellow;
+        }
+
+        /* Z-index example */
+        .background-image {
+            position: absolute;
+            z-index: -1;
+            width: 100px;
+            height: 100px;
+        }
+        .heading {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Display property example */
+        .inline-box {
+            display: inline;
+            background-color: yellow;
+            padding: 5px;
+            border: 1px solid blue;
+        }
+        .inline-block-box {
+            display: inline-block;
+            background-color: yellow;
+            padding: 20px;
+            border: 1px solid blue;
+            margin: 5px;
+        }
+        .block-box {
+            display: block;
+            background-color: yellow;
+            padding: 20px;
+            border: 1px solid blue;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hover effect example -->
+    <h2>Before hover</h2>
+    <a href="#" class="link">This is a link</a>
+    <br><br>
+
+    <!-- List styling example -->
+    <ul class="highlighted-list">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <br>
+    <br>
+    
+    <!-- Image behind heading using z-index -->
+    <img src="screen.png" alt="Background Image" class="background-image" >
+    <h1 class="heading">This is a heading</h1>
+    <p class="heading">Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+    <!-- Display property example -->
+    <h2>The display Property</h2>
+    <h3>display: inline</h3>
+    <span class="inline-box">hello</span>
+    <span class="inline-box">there</span>
+    <p>this is text this is text this is text this is text this is text</p>
+
+    <h3>display: inline-block</h3>
+    <div class="inline-block-box">hello</div>
+    <div class="inline-block-box">there</div>
+    <p>this is text this is text this is text this is text this is text</p>
+
+    <h3>display: block</h3>
+    <div class="block-box">hello</div>
+    <div class="block-box">there</div>
+    <p>this is text this is text this is text this is text this is text</p>
+</body>
+</html>
